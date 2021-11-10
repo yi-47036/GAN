@@ -3,58 +3,37 @@
     <vType id ="myType" vClass ="passenger" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5" 
     maxSpeed = "20"  carFollowModel="IDM" laneChangeModel = "SL2015"/>)
 
-
     <route id="route1" edges = "1i 3o"/>
-    <route id="route2" edges = "2i 4o"/>
-    <route id="route3" edges = "3i 1o"/>
-    <route id="route4" edges = "4i 2o"/>
-    <route id="route5" edges = "1i 2o"/>
-    <route id="route6" edges = "2i 3o"/>
-    <route id="route7" edges = "3i 4o"/>
-    <route id="route8" edges = "4i 1o"/>
+    <route id="route2" edges = "1i 4o"/>
+    <route id="route3" edges = "3i 4o"/>
         
-    <vehicle id = "0" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "0" arrivalPos = "5" />
-    <vehicle id = "1" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "0" arrivalPos = "5" />
-    <vehicle id = "2" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "1" arrivalPos = "5" />
-    <vehicle id = "3" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "2" arrivalPos = "5" />
-    <vehicle id = "4" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "2" arrivalPos = "5" />
-    <vehicle id = "5" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "3" arrivalPos = "5" />
-    <vehicle id = "6" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "6" arrivalPos = "5" />
-    <vehicle id = "7" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "6" arrivalPos = "5" />
-    <vehicle id = "8" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "7" arrivalPos = "5" />
-    <vehicle id = "9" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "7" arrivalPos = "5" />
-    <vehicle id = "10" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "8" arrivalPos = "5" />
-    <vehicle id = "11" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "9" arrivalPos = "5" />
-    <vehicle id = "12" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "9" arrivalPos = "5" />
-    <vehicle id = "13" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "10" arrivalPos = "5" />
-    <vehicle id = "14" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "11" arrivalPos = "5" />
-    <vehicle id = "15" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "11" arrivalPos = "5" />
-    <vehicle id = "16" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "12" arrivalPos = "5" />
-    <vehicle id = "17" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "12" arrivalPos = "5" />
-    <vehicle id = "18" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "13" arrivalPos = "5" />
-    <vehicle id = "19" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "13" arrivalPos = "5" />
-    <vehicle id = "20" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "15" arrivalPos = "5" />
-    <vehicle id = "egocar" type = "myType" color = "red" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route7" depart = "15" departPos = "50" arrivalPos = "5" />
-    <vehicle id = "22" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "16" arrivalPos = "5" />
-    <vehicle id = "23" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "16" arrivalPos = "5" />
-    <vehicle id = "24" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "17" arrivalPos = "5" />
-    <vehicle id = "25" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "17" arrivalPos = "5" />
-    <vehicle id = "26" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "18" arrivalPos = "5" />
-    <vehicle id = "27" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "19" arrivalPos = "5" />
-    <vehicle id = "28" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "20" arrivalPos = "5" />
-    <vehicle id = "29" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "21" arrivalPos = "5" />
-    <vehicle id = "30" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "21" arrivalPos = "5" />
-    <vehicle id = "31" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "22" arrivalPos = "5" />
-    <vehicle id = "32" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "22" arrivalPos = "5" />
-    <vehicle id = "33" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "23" arrivalPos = "5" />
-    <vehicle id = "34" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "23" arrivalPos = "5" />
-    <vehicle id = "35" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "24" arrivalPos = "5" />
-    <vehicle id = "36" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "25" arrivalPos = "5" />
-    <vehicle id = "37" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "25" arrivalPos = "5" />
-    <vehicle id = "38" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "26" arrivalPos = "5" />
-    <vehicle id = "39" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "26" arrivalPos = "5" />
-    <vehicle id = "40" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "27" arrivalPos = "5" />
-    <vehicle id = "41" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "28" arrivalPos = "5" />
-    <vehicle id = "42" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "28" arrivalPos = "5" />
-    <vehicle id = "43" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "29" arrivalPos = "5" />
+    <vehicle id = "0" type = "myType" color = "red" guiShape = "passenger" arrivalLane = "2" departLane = "2" departSpeed = "9" route = "route3" depart = "0" departPos = "50" arrivalPos = "5" />
+    <vehicle id = "1" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "9" route = "route1" depart = "1" arrivalPos = "5" />
+    <vehicle id = "2" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "7" route = "route2" depart = "2" arrivalPos = "5" />
+    <vehicle id = "3" type = "myType" color = "red" guiShape = "passenger" arrivalLane = "2" departLane = "2" departSpeed = "8" route = "route3" depart = "4" departPos = "50" arrivalPos = "5" />
+    <vehicle id = "4" type = "myType" color = "red" guiShape = "passenger" arrivalLane = "2" departLane = "2" departSpeed = "5" route = "route3" depart = "5" departPos = "50" arrivalPos = "5" />
+    <vehicle id = "5" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "0" departSpeed = "8" route = "route2" depart = "6" arrivalPos = "5" />
+    <vehicle id = "6" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "9" route = "route1" depart = "7" arrivalPos = "5" />
+    <vehicle id = "7" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "8" route = "route2" depart = "8" arrivalPos = "5" />
+    <vehicle id = "8" type = "myType" color = "red" guiShape = "passenger" arrivalLane = "2" departLane = "2" departSpeed = "9" route = "route3" depart = "9" departPos = "50" arrivalPos = "5" />
+    <vehicle id = "9" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "6" route = "route1" depart = "11" arrivalPos = "5" />
+    <vehicle id = "10" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "0" departSpeed = "9" route = "route2" depart = "11" arrivalPos = "5" />
+    <vehicle id = "11" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "7" route = "route2" depart = "12" arrivalPos = "5" />
+    <vehicle id = "12" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "0" departSpeed = "7" route = "route2" depart = "12" arrivalPos = "5" />
+    <vehicle id = "13" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "6" route = "route2" depart = "13" arrivalPos = "5" />
+    <vehicle id = "14" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "6" route = "route2" depart = "14" arrivalPos = "5" />
+    <vehicle id = "15" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "7" route = "route1" depart = "15" arrivalPos = "5" />
+    <vehicle id = "16" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "7" route = "route1" depart = "16" arrivalPos = "5" />
+    <vehicle id = "17" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "9" route = "route1" depart = "17" arrivalPos = "5" />
+    <vehicle id = "18" type = "myType" color = "red" guiShape = "passenger" arrivalLane = "2" departLane = "2" departSpeed = "9" route = "route3" depart = "18" departPos = "50" arrivalPos = "5" />
+    <vehicle id = "19" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "7" route = "route1" depart = "20" arrivalPos = "5" />
+    <vehicle id = "20" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "0" departSpeed = "8" route = "route2" depart = "20" arrivalPos = "5" />
+    <vehicle id = "21" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "8" route = "route2" depart = "21" arrivalPos = "5" />
+    <vehicle id = "22" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "6" route = "route1" depart = "22" arrivalPos = "5" />
+    <vehicle id = "23" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "6" route = "route1" depart = "22" arrivalPos = "5" />
+    <vehicle id = "24" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "6" route = "route2" depart = "26" arrivalPos = "5" />
+    <vehicle id = "25" type = "myType" color = "red" guiShape = "passenger" arrivalLane = "2" departLane = "2" departSpeed = "5" route = "route3" depart = "26" departPos = "50" arrivalPos = "5" />
+    <vehicle id = "26" type = "myType" color = "red" guiShape = "passenger" arrivalLane = "2" departLane = "2" departSpeed = "5" route = "route3" depart = "27" departPos = "50" arrivalPos = "5" />
+    <vehicle id = "27" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "8" route = "route2" depart = "28" arrivalPos = "5" />
+    <vehicle id = "28" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "9" route = "route1" depart = "29" arrivalPos = "5" />
 </routes>

@@ -14,12 +14,12 @@ def generateRoutes():
 
     random.seed(1111)
     #四条路径每个step生成一辆车的概率
-    p1 = 0.7
-    p2 = 0.7
-    p3 = 0.
-    p4 = 0.
-    p5 = 0.
-    p6 = 0.
+    p1 = 0.2
+    p2 = 0.2
+    p3 = 0.2
+    p4 = 0.2
+    p5 = 0.2
+    p6 = 0.2
     p7 = 0.
     p8 = 0.
     #callFollowModel = ""Krauss
@@ -30,65 +30,45 @@ def generateRoutes():
     <vType id ="myType" vClass ="passenger" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5" 
     maxSpeed = "20"  carFollowModel="IDM" laneChangeModel = "SL2015"/>)
 
-
     <route id="route1" edges = "1i 3o"/>
-    <route id="route2" edges = "2i 4o"/>
-    <route id="route3" edges = "3i 1o"/>
-    <route id="route4" edges = "4i 2o"/>
-    <route id="route5" edges = "1i 2o"/>
-    <route id="route6" edges = "2i 3o"/>
-    <route id="route7" edges = "3i 4o"/>
-    <route id="route8" edges = "4i 1o"/>
+    <route id="route2" edges = "1i 4o"/>
+    <route id="route3" edges = "3i 4o"/>
         """)
+
         vehicle_number = 0
         for i in range(step_number):
             if random.uniform(0,1) < p1:
                 route.write("""
-    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route1" depart = "%i" arrivalPos = "5" />"""
-                    %(vehicle_number, i))
-                vehicle_number +=1
-            if random.uniform(0,1) < p2:
-                route.write("""
-    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route5" depart = "%i" arrivalPos = "5" />"""
-                    %(vehicle_number, i))
+    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "%i" route = "route1" depart = "%i" arrivalPos = "5" />"""
+                    %(vehicle_number, random.randrange(5, 10), i))
                 vehicle_number +=1
 
+            if random.uniform(0,1) < p2:
+                route.write("""
+    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "%i" route = "route1" depart = "%i" arrivalPos = "5" />"""
+                    %(vehicle_number, random.randrange(5, 10), i))
+                vehicle_number +=1
 
             if random.uniform(0,1) < p3:
                 route.write("""
-    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route2" depart = "%i" arrivalPos = "5" />"""
-                    %(vehicle_number, i))
+    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "%i" route = "route2" depart = "%i" arrivalPos = "5" />"""
+                    %(vehicle_number, random.randrange(5, 10), i))
                 vehicle_number +=1
+
             if random.uniform(0,1) < p4:
                 route.write("""
-    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route6" depart = "%i" arrivalPos = "5" />"""
-                    %(vehicle_number, i))
+    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "0" departSpeed = "%i" route = "route2" depart = "%i" arrivalPos = "5" />"""
+                    %(vehicle_number, random.randrange(5, 10), i))
                 vehicle_number +=1
 
-
+            #if i == step_number / 2:
             if random.uniform(0,1) < p5:
                 route.write("""
-    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route3" depart = "%i" arrivalPos = "5" />"""
-                    %(vehicle_number, i))
-                vehicle_number +=1
-            #if random.uniform(0,1) < p6:
-            if i == step_number / 2:
-                route.write("""
-    <vehicle id = "egocar" type = "myType" color = "red" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route7" depart = "%i" departPos = "50" arrivalPos = "5" />"""
-                    %(i))
+    <vehicle id = "%i" type = "myType" color = "red" guiShape = "passenger" arrivalLane = "2" departLane = "2" departSpeed = "%i" route = "route3" depart = "%i" departPos = "50" arrivalPos = "5" />"""
+                    %(vehicle_number, random.randrange(5, 10), i))
                 vehicle_number +=1
 
 
-            if random.uniform(0,1) < p7:
-                route.write("""
-    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "0" departLane = "0" departSpeed = "10" route = "route4" depart = "%i" arrivalPos = "5" />"""
-                    %(vehicle_number, i))
-                vehicle_number +=1
-            if random.uniform(0,1) < p8:
-                route.write("""
-    <vehicle id = "%i" type = "myType" guiShape = "passenger" arrivalLane = "1" departLane = "1" departSpeed = "10" route = "route8" depart = "%i" arrivalPos = "5" />"""
-                    %(vehicle_number, i))
-                vehicle_number +=1
 
         route.write("""
 </routes>""")
@@ -103,7 +83,7 @@ generateRoutes()
 #
 sumoBinary = checkBinary("sumo-gui")
 sumoCmd = [sumoBinary, "-c", "junction.sumocfg", "--step-length", "0.1" , "--time-to-teleport", "-1",\
-    "--collision.check-junctions", str(True),"--collision.mingap-factor", "1", "--collision.action", "remove"]
+    "--collision.check-junctions", str(True),"--collision.mingap-factor", "0.5", "--collision.action", "remove"]
 traci.start(sumoCmd)
 #traci.vehicletype.setMinGap('myType', 1)
 
