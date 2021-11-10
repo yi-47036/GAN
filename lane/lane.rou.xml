@@ -1,0 +1,107 @@
+
+<routes>
+    <vType id ="myType" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "50" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <route id = "r1" edges = "E1 E2"  />
+        
+    <vType id ="vType_1_0"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "8" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_1_0" type = "vType_1_0""  route = "r1"  departSpeed = 0 depart = "0" departLane = "1" 
+        arrivalLane = "1"  color = "0,1,0" />
+    <vType id ="vType_2_1"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "2" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_1" type = "vType_2_1""  route = "r1"  departSpeed = 0 depart = "2" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_2_2"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "6" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_2" type = "vType_2_2""  route = "r1"  departSpeed = 0 depart = "3" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_2_3"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "14" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_3" type = "vType_2_3""  route = "r1"  departSpeed = 0 depart = "9" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_0_4"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "7" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_0_4" type = "vType_0_4""  route = "r1"  departSpeed = 0 depart = "13" departLane = "0" 
+        arrivalLane = "0"  color = "1,0,0" />
+    <vType id ="vType_0_5"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "26" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_0_5" type = "vType_0_5""  route = "r1"  departSpeed = 0 depart = "21" departLane = "0" 
+        arrivalLane = "0"  color = "1,0,0" />
+    <vType id ="vType_1_6"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "10" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_1_6" type = "vType_1_6""  route = "r1"  departSpeed = 0 depart = "21" departLane = "1" 
+        arrivalLane = "1"  color = "0,1,0" />
+    <vType id ="vType_0_7"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "29" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_0_7" type = "vType_0_7""  route = "r1"  departSpeed = 0 depart = "22" departLane = "0" 
+        arrivalLane = "0"  color = "1,0,0" />
+    <vType id ="vType_0_8"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "1" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_0_8" type = "vType_0_8""  route = "r1"  departSpeed = 0 depart = "28" departLane = "0" 
+        arrivalLane = "0"  color = "1,0,0" />
+    <vType id ="vType_2_9"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "23" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_9" type = "vType_2_9""  route = "r1"  departSpeed = 0 depart = "34" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_2_10"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "10" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_10" type = "vType_2_10""  route = "r1"  departSpeed = 0 depart = "39" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_2_11"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "23" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_11" type = "vType_2_11""  route = "r1"  departSpeed = 0 depart = "42" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_0_12"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "7" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_0_12" type = "vType_0_12""  route = "r1"  departSpeed = 0 depart = "53" departLane = "0" 
+        arrivalLane = "0"  color = "1,0,0" />
+    <vType id ="vType_0_13"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "20" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_0_13" type = "vType_0_13""  route = "r1"  departSpeed = 0 depart = "58" departLane = "0" 
+        arrivalLane = "0"  color = "1,0,0" />
+    <vType id ="vType_2_14"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "12" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_14" type = "vType_2_14""  route = "r1"  departSpeed = 0 depart = "58" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_0_15"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "25" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_0_15" type = "vType_0_15""  route = "r1"  departSpeed = 0 depart = "62" departLane = "0" 
+        arrivalLane = "0"  color = "1,0,0" />
+    <vType id ="vType_0_16"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "17" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_0_16" type = "vType_0_16""  route = "r1"  departSpeed = 0 depart = "63" departLane = "0" 
+        arrivalLane = "0"  color = "1,0,0" />
+    <vType id ="vType_0_17"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "12" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_0_17" type = "vType_0_17""  route = "r1"  departSpeed = 0 depart = "66" departLane = "0" 
+        arrivalLane = "0"  color = "1,0,0" />
+    <vType id ="vType_1_18"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "12" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_1_18" type = "vType_1_18""  route = "r1"  departSpeed = 0 depart = "66" departLane = "1" 
+        arrivalLane = "1"  color = "0,1,0" />
+    <vType id ="vType_2_19"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "14" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_19" type = "vType_2_19""  route = "r1"  departSpeed = 0 depart = "80" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_2_20"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "17" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_20" type = "vType_2_20""  route = "r1"  departSpeed = 0 depart = "81" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_0_21"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "26" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_0_21" type = "vType_0_21""  route = "r1"  departSpeed = 0 depart = "86" departLane = "0" 
+        arrivalLane = "0"  color = "1,0,0" />
+    <vType id ="vType_2_22"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "20" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_22" type = "vType_2_22""  route = "r1"  departSpeed = 0 depart = "91" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_2_23"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "24" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_2_23" type = "vType_2_23""  route = "r1"  departSpeed = 0 depart = "92" departLane = "2" 
+        arrivalLane = "2"  color = "0,0,1" />
+    <vType id ="vType_1_24"" vClass ="taxi" accel ="0.8" decel ="4.5" sigma = "0.5" length = "5"
+    maxSpeed = "11" callFollowModel = "IDM" actionStepLength = "1" laneChangeModel = "LC2013" />)
+    <vehicle id = "v_1_24" type = "vType_1_24""  route = "r1"  departSpeed = 0 depart = "96" departLane = "1" 
+        arrivalLane = "1"  color = "0,1,0" />
+</routes>
